@@ -5,10 +5,12 @@ import './App.css';
 
 import Header from "./components/template/Header/Header";
 import Footer from "./components/template/Footer/Footer";
+import Sidebar from "./components/macro/Sidebar";
 
 function App() {
   return (
     <>
+    <Sidebar />
       <Header />
       <Router>
         <Routes />

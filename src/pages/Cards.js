@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardGroup, Row, Col, Container } from 'react-bootstrap'
+import { Card, CardGroup, Row, Col, Container } from 'react-bootstrap';
 
 function Cards (props) {
 
@@ -8,7 +8,7 @@ function Cards (props) {
         <Container>
         <CardGroup>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src="../assets/images/cart" />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
       <Card.Text>
@@ -16,9 +16,6 @@ function Cards (props) {
         additional content. This content is a little bit longer.
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
   </Card>
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
@@ -43,9 +40,6 @@ function Cards (props) {
         show that equal height action.
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
   </Card>
 </CardGroup>
 
