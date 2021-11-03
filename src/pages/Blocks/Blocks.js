@@ -1,19 +1,16 @@
 import React from "react";
-import {Card} from 'react-bootstrap'
+import {Card, Container, CardGroup} from 'react-bootstrap'
 
 function Blocks() {
 
     return(
+        <Container>
         <>
-        <div>
-        <div class="cards__heading">
-          <h3>Content Blocks</h3>
-        </div>
-</div>
-<div>
+        <Card body>Content Blocks</Card>
+</>
 <>
+<h3>Content Block Features</h3>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px180" />
     <Card.Body>
       <Card.Text>
         Some quick example text to build on the card title and make up the bulk
@@ -32,43 +29,42 @@ function Blocks() {
     <Card.Img variant="bottom" src="holder.js/100px180" />
   </Card>
 </>
-</div>
-<div>
-<div class="card-body py-3 p-0">
-            <h3 class="block__title mb-lg-4">Content Block Features</h3>
-            <div class="row feature-3 text-center">
-              <div class="col-md-4 three-grids-columns mt-5">
-                <span class="fa fa-laptop icon-fea" aria-hidden="true"></span>
-                <a href="#">
+<>
+<CardGroup>
+  <Card>
+    <Card.Body>
+      <Card.Title>Web Design</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <Card>
+    <Card.Body>
+      <Card.Title>Graphic Design</Card.Title>
+      <Card.Text>
+        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <Card>
+    <Card.Body>
+      <Card.Title>Web Development</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This card has even longer content than the first to
+        show that equal height action.
+      </Card.Text>
+    </Card.Body>
 
-                  <h4>Web Design</h4>
-                </a>
-                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
-
-                <a href="#" class="actionbg">Read More</a>
-              </div>
-              <div class="col-md-4 three-grids-columns mt-5">
-                <span class="fa fa-paint-brush icon-fea" aria-hidden="true"></span>
-                <a href="#">
-
-                  <h4>Graphic Design</h4>
-                </a>
-                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
-                <a href="#" class="actionbg">Read More</a>
-              </div>
-              <div class="col-md-4 three-grids-columns mt-5">
-                <span class="fa fa-signal icon-fea" aria-hidden="true"></span>
-                <a href="#">
-
-                  <h4>Web Development</h4>
-                </a>
-                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
-                <a href="#" class="actionbg">Read More</a>
-              </div>
-            </div>
-          </div>
-</div>
+  </Card>
+</CardGroup>
 </>
+
+</Container>
+
 
     )
 }

@@ -10,10 +10,10 @@ import Sidebar from "./components/macro/Sidebar";
 function App() {
   return (
     <>
-    
+
       <Header />
       <Sidebar />
-            <Router>
+      <Router>
         <Routes />
       </Router>
       <Footer />

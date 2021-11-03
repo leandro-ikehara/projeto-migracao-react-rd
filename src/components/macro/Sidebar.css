@@ -1,5 +1,6 @@
 
 .sidebar {
+    position: absolute;
     display: block;
     align-items: left;
     justify-content: left;

@@ -10,7 +10,7 @@ function Sidebar() {
 
 <Navbar className="sidebar" variant="light">
     <Nav className="me-auto">
-        <Navbar.Brand href="/Main">Dashboard</Navbar.Brand>
+        <Navbar.Brand href="/">Dashboard</Navbar.Brand>
       <Nav.Link href="/Cards">Default Cards</Nav.Link>
       <Nav.Link href="/Pricing">Pricing Tables</Nav.Link>
       <Nav.Link href="/Blocks">Content Blocks</Nav.Link>
