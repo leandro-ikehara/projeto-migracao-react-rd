@@ -3,16 +3,17 @@ import { Routes } from "./routes";
 import 'react-bootstrap';
 import './App.css';
 
-import Header from "./components/template/Header";
-//import Footer from "./components/template/Footer";
+import Header from "./components/template/Header/Header";
+import Footer from "./components/template/Footer/Footer";
 
 function App() {
-  return(
+  return (
     <>
-    <Header/>
-    <Router>
-      <Routes/>
-    </Router>
+      <Header />
+      <Router>
+        <Routes />
+      </Router>
+      <Footer />
     </>
   )
 }
