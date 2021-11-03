@@ -1,5 +1,6 @@
 import React from "react";
-import {Navbar, Container} from 'react-bootstrap'
+import {Navbar, Container, Nav} from 'react-bootstrap';
+import '../macro/Sidebar.css'
 
 
 function Sidebar() {
@@ -7,20 +8,16 @@ function Sidebar() {
     return(
         <>
 
-  <Navbar fixed="left" bg="dark" variant="dark">
-    <Container>
-      <Navbar.Brand href="#home">
-        <img
-          alt=""
-          src="/logo.svg"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-        />{' '}
-      React Bootstrap
-      </Navbar.Brand>
-    </Container>
-  </Navbar>
+<Navbar className="sidebar" variant="light">
+    <Nav className="me-auto">
+        <Navbar.Brand href="/Main">Dashboard</Navbar.Brand>
+      <Nav.Link href="/Cards">Default Cards</Nav.Link>
+      <Nav.Link href="/Pricing">Pricing Tables</Nav.Link>
+      <Nav.Link href="/Blocks">Content Blocks</Nav.Link>
+      <Nav.Link href="/Forms">Forms</Nav.Link>
+    </Nav>
+    </Navbar>
+ 
 </>
     )
 }

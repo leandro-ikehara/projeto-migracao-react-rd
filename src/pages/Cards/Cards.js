@@ -6,9 +6,11 @@ function Cards (props) {
     return(
         <>
         <Container>
+          <div>
+            <h3>Card Columns</h3>
         <CardGroup>
   <Card>
-    <Card.Img variant="top" src="../assets/images/cart" />
+    <Card.Img variant="top" src="" />
     <Card.Body>
       <Card.Title>Card title</Card.Title>
       <Card.Text>
@@ -42,7 +44,10 @@ function Cards (props) {
     </Card.Body>
   </Card>
 </CardGroup>
+</div>
 
+<div>
+  <h3>Grid Columns</h3>
 <Row xs={1} md={2} className="g-4">
   {Array.from({ length: 4 }).map((_, idx) => (
     <Col>
@@ -59,6 +64,7 @@ function Cards (props) {
     </Col>
   ))}
 </Row>
+</div>
 </Container>
         </>
 
