@@ -1,7 +1,9 @@
 import React from "react"
+import { Navbar, Form, Container, Nav, NavDropdown, FormControl, Button, Row, Col, Cards } from 'react-bootstrap';
 
 function Header (props) {
     return (
+        <header>
         <>
         <div>
         <Navbar bg="light" expand="lg">
@@ -35,7 +37,7 @@ function Header (props) {
           className="me-2"
           aria-label="Search"
         />
-        <Button variant="outline-success">Search</Button>
+        <Button><a href= /></Button>
       </Form>
     </Navbar.Collapse>
   </Container>
@@ -43,6 +45,7 @@ function Header (props) {
 
         </div>
         </>
+        </header>
     )
 }
 

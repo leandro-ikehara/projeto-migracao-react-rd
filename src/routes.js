@@ -1,14 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-
-import Dashboard from './pages/Home';
+import Main from './components/cards/Main';
 
 export const Routes = () => {
     return (
         <Switch>
         <>
-        <Route path="/" component={Home} />
+        <Route path="/" component={Main} />
         {/* <Route path = "/cards" component={Cards} />
         <Route path="/pricing" component={Pricing} />
         <Route path = "/blocks" component={Blocks} />

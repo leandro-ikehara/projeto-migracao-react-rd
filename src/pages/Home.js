@@ -1,11 +1,11 @@
 import React from "react";
-import Cards from "../components/cards/Cards";
+import Main from "../components/cards/Main";
 
 function Home (props) {
 
     return (
         <>
-        <Cards />
+        <Main />
         </>
     )
 }

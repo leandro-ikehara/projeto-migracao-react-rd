@@ -4,15 +4,15 @@ import 'react-bootstrap';
 import './App.css';
 
 import Header from "./components/template/Header";
+//import Footer from "./components/template/Footer";
 
 function App() {
   return(
     <>
-    <Header />
+    <Header/>
     <Router>
-      <Routes />
+      <Routes/>
     </Router>
-    <Footer />
     </>
   )
 }
